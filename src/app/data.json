@@ -1,0 +1,50 @@
+[
+    {
+        "id": 1,
+        "item": "Arroz",
+        "categoria": "Mercearia",
+        "done": false
+    },
+    {
+        "id": 2,
+        "item": "Feijão",
+        "categoria": "Mercearia",
+        "done": false
+    },
+    {
+        "id": 3,
+        "item": "Detergente",
+        "categoria": "Limpeza e Higiene Pessoal",
+        "done": false
+    },
+    {
+        "id": 4,
+        "item": "Alface",
+        "categoria": "Frutas e Legumes",
+        "done": false
+    },
+    {
+        "id": 5,
+        "item": "Bife",
+        "categoria": "Congelados",
+        "done": false
+    },
+    {
+        "id": 6,
+        "item": "Bolo",
+        "categoria": "Padaria e Doces",
+        "done": false
+    },
+    {
+        "id": 7,
+        "item": "Refrigeramte",
+        "categoria": "Bebidas",
+        "done": false
+    },
+    {
+        "id":8,
+        "item":"Leite",
+        "categoria": "Frios e Laticínios",
+        "done":false
+    }     
+]
