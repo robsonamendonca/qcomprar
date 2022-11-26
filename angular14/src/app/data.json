@@ -46,5 +46,11 @@
         "item":"Leite",
         "categoria": "Frios e Laticínios",
         "done":false
-    }     
+    }    ,
+    {
+        "id":9,
+        "item":"Oleo",
+        "categoria": "Mercearia",
+        "done":false
+    } 
 ]
