@@ -2,6 +2,7 @@ import { Purchase } from './../models/purchase.model';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ListPurchase } from 'src/models/listpurchase.model';
+import { EventListForm } from 'src/models/event-list-form.model';
 
 @Component({
   selector: 'app-root',
@@ -50,23 +51,22 @@ export class AppComponent {
     this.save();
   }
 
-  changeDone(listPurchase: ListPurchase, event: Event){
-    const isChecked = (event.target as HTMLInputElement).checked;
-    listPurchase.done = (isChecked) ? isChecked : false;
-   if (listPurchase.done){
-    const index = this.purchases.findIndex(x=>x.id == listPurchase.id);
-    if(index === -1){
-      this.purchases.push(new Purchase(
-        listPurchase.id,listPurchase.item,false
-      ));
+  changeDone(eventListForm: EventListForm){
+    const isChecked = (eventListForm.event.target as HTMLInputElement).checked;
+    eventListForm.item.done = (isChecked) ? isChecked : false;
+    if (eventListForm.item.done){
+      const index = this.purchases.findIndex(x=>x.id == eventListForm.item.id);
+      if(index === -1){
+        this.purchases.push(new Purchase(
+          eventListForm.item.id,eventListForm.item.item,false
+        ));
+        this.save();
+      }
+    }else {
+      this.purchases = this.purchases.filter(x => x.id !== eventListForm.item.id);
       this.save();
+      eventListForm.item.done = false;
     }
-   }else{
-    this.purchases = this.purchases.filter(x => x.id !== listPurchase.id);
-    this.save();
-    listPurchase.done = false;
-   }
-
   }
 
   markAsDone(purchase: Purchase){

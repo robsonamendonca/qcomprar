@@ -1,0 +1,9 @@
+<div>
+    <h2>{{title}}</h2>
+    <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
+        <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
+            *ngIf="item.categoria == category" (change)="emitEvent(item, $event)"/>
+        <label for="example-{{item.id}}" *ngIf="item.categoria==category">{{item.item}}</label>          
+    </div>
+    <img class="image" src="{{pathImage}}" alt="" />
+</div>
