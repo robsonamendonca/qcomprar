@@ -63,9 +63,9 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
 
 ### Contribuidores:
-<p >
-  <img src="https://avatars.githubusercontent.com/u/37554746?v=4" class="float-left rounded-2 avatar-user" width="64" heigth="64">
-</p>
+<a href="https://github.com/Llimaa" targer="_blank">
+  <img src="https://github.com/robsonamendonca/qcomprar/blob/main/src/assets/Llimaa.png?raw=true" class="float-left rounded-2 avatar-user" width="120" heigth="120">
+</a>
 
 ___
 
