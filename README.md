@@ -11,6 +11,8 @@ ___
   <a href="LICENSE">
     <img alt="License" src="https://img.shields.io/badge/license-MIT-%23F8952D">
   </a>
+  |
+  <a href="https://wakatime.com/badge/user/7b985f77-0bde-4bbf-899e-c4bb0e25f27b/project/87aae40f-4139-4a7c-ae51-fb2af6a96443"><img src="https://wakatime.com/badge/user/7b985f77-0bde-4bbf-899e-c4bb0e25f27b/project/87aae40f-4139-4a7c-ae51-fb2af6a96443.svg" alt="wakatime"></a>
 </p>
 
 ___
