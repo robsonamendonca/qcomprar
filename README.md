@@ -26,7 +26,7 @@ ___
 
 ___
 
-<img src="https://readme-maker.herokuapp.com/uploads/3ee48cd3ece1a158-Captura-da-Web_26-11-2022_83525_localhost.jpeg" width="1200">
+<img src="https://raw.githubusercontent.com/robsonamendonca/qcomprar/main/src/assets/qcomprar.vercel.app.jpeg" width="1200">
 
 ## :information_source: Sobre
 
@@ -61,6 +61,11 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias
 - Faça um commit com suas mudanças
 - 'Push' a sua branch
 - Ir em Pull Requests do projeto original e criar uma pull request com o seu commit
+
+### Contribuidores:
+<a href="https://github.com/Llimaa" targer="_blank">
+  <img src="https://github.com/robsonamendonca/qcomprar/blob/main/src/assets/Llimaa.png?raw=true" class="float-left rounded-2 avatar-user" width="120" heigth="120">
+</a>
 
 ___
 

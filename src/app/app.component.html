@@ -39,92 +39,89 @@
   
   <div id="preparalista" *ngIf="mode=='addList'">
     <form [formGroup]="form">
-      <div class="row">      
+      <div class="row">
         <div class="card gray">
-          <h2>Mercearia</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='Mercearia'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='Mercearia'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/MERCEARIA.jpg" alt="" />
+          <app-list-form
+            [dataList]="dataList"
+            [category]="'Mercearia'"
+            [title]="'Mercearia'"
+            [pathImage]="'assets/MERCEARIA.jpg'"
+            (changeDoneEvent)="changeDone($event)"
+          ></app-list-form>
+        </div>
+        <div class="card gray">
+          <app-list-form
+            [dataList]="dataList"
+            [category]="'LIMPEZA E HIGIENE PESSOAL'"
+            [title]="'Limpeza e Higiene Pessoal'"
+            [pathImage]="'assets/LIMPEZA.jpg'"
+            (changeDoneEvent)="changeDone($event)"
+          ></app-list-form>
         </div>
   
-        <div class="card gray">
-          <h2>Limpeza e Higiene Pessoal</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='LIMPEZA E HIGIENE PESSOAL'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='LIMPEZA E HIGIENE PESSOAL'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/LIMPEZA.jpg" alt="" />
-        </div>
-  
-        <div class="card gray">
-          <h2>Frutas e Legumes</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='FRUTAS E LEGUMES'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='FRUTAS E LEGUMES'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/FRUTASLEGUMES.jpg" alt="" />
+        <div class="card gray" >
+          <app-list-form 
+            [dataList]="dataList"
+            [category]="'FRUTAS E LEGUMES'"
+            [title]="'Frutas e Legumes'"
+            [pathImage]="'assets/FRUTASLEGUMES.jpg'"
+            (changeDoneEvent)="changeDone($event)"
+          ></app-list-form>
         </div>      
       </div>
   
       <div class="row">      
         <div class="card gray">
-          <h2>Congelados</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='CONGELADOS'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='CONGELADOS'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/CONGELADOS.png" alt="" />
+          <app-list-form 
+            [dataList]="dataList"
+            [category]="'CONGELADOS'"
+            [title]="'Congelados'"
+            [pathImage]="'assets/CONGELADOS.png'"
+            (changeDoneEvent)="changeDone($event)"
+          ></app-list-form>
         </div>
   
         <div class="card gray">
-          <h2>Padaria e Doces</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='PADARIA E DOCES'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='PADARIA E DOCES'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/PADARIADOCES.jpg" alt="" />
+          <app-list-form 
+          [dataList]="dataList"
+          [category]="'PADARIA E DOCES'"
+          [title]="'Padaria e Doces'"
+          [pathImage]="'assets/PADARIADOCES.jpg'"
+          (changeDoneEvent)="changeDone($event)"
+        ></app-list-form>
         </div>
   
         <div class="card gray">
-          <h2>Frios e Laticínios</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='FRIOS E LATICÍNIOS'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='FRIOS E LATICÍNIOS'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/Frios.png" alt="" />
+          <app-list-form 
+            [dataList]="dataList"
+            [title]="'Frios e Laticínios'"
+            [category]="'FRIOS E LATICÍNIOS'"
+            [pathImage]="'assets/Frios.png'"
+            (changeDoneEvent)="changeDone($event)"
+          ></app-list-form>
         </div>      
       </div>
   
       <div class="row">      
         <div class="card gray">
-          <h2>Bebidas</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='BEBIDAS'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='BEBIDAS'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/Bebidas.jpg" alt="" />
-        </div>
+          <app-list-form
+            [dataList]="dataList"
+            [category]="'BEBIDAS'"
+            [title]="'Bebidas'"
+            [pathImage]="'assets/Bebidas.jpg'"
+            (changeDoneEvent)="changeDone($event)"
+          ></app-list-form>
+        </div> 
   
         <div class="card gray">
-          <h2>Utilidades e Outros</h2>
-          <div *ngFor="let item of dataList" class="checkbox-wrapper-1" >
-            <input id="example-{{item.id}}" class="substituted" type="checkbox" aria-hidden="true" 
-            *ngIf="item.categoria=='UTILIDADES E OUTROS'" (change)="changeDone(item,$event)"  />
-            <label for="example-{{item.id}}" *ngIf="item.categoria=='UTILIDADES E OUTROS'">{{item.item}}</label>          
-          </div>
-          <img class="image" src="assets/Utilidades.jpg" alt="" />
+          <app-list-form 
+            [dataList]="dataList"
+            [category]="'UTILIDADES E OUTROS'"
+            [title]="'Utilidades e Outros'"
+            [pathImage]="'assets/Utilidades.jpg'"
+            (changeDoneEvent)="changeDone($event)"
+        ></app-list-form>
         </div>
-  
-      
       </div>
     </form>
   </div>
