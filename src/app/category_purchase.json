@@ -1,0 +1,37 @@
+[
+    {
+      "name": "MERCEARIA",
+      "url_photo": "https://qcomprar.vercel.app/assets/MERCEARIA.jpg",
+      "id": 1669457932
+    },
+    {
+      "name": "LIMPEZA",
+      "url_photo": "https://qcomprar.vercel.app/assets/LIMPEZA.jpg",
+      "id": 1669458484
+    },
+    {
+      "name": "CONGELADOS",
+      "url_photo": "https://qcomprar.vercel.app/assets/CONGELADOS.png",
+      "id": 1669458514
+    },
+    {
+      "name": "PADARIA",
+      "url_photo": "https://qcomprar.vercel.app/assets/PADARIADOCES.jpg",
+      "id": 1669458534
+    },
+    {
+      "name": "FRIOS",
+      "url_photo": "https://qcomprar.vercel.app/assets/Frios.png",
+      "id": 1669458587
+    },
+    {
+      "name": "BEBIDAS",
+      "url_photo": "https://qcomprar.vercel.app/assets/Bebidas.jpg",
+      "id": 1669458601
+    },
+    {
+      "name": "UTILIDADES",
+      "url_photo": "https://qcomprar.vercel.app/assets/Utilidades.jpg",
+      "id": 1669458612
+    }
+  ]
